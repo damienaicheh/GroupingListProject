@@ -8,12 +8,13 @@ using System.Linq;
 
 namespace GroupingListProject.ViewModels
 {
-    public class MyViewModel
+    public class PlayerViewModel
     {
         private ObservableCollection<GroupInfosList> _players = new ObservableCollection<GroupInfosList>();
-        public ObservableCollection<GroupInfosList> Players {
-            get { return _players; }
-            set { value = _players; }
+        public ObservableCollection<GroupInfosList> Players
+        {
+            get => _players;
+            set => value = _players;
         }
 
         public void Initialize()

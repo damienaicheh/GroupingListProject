@@ -9,12 +9,12 @@ namespace GroupingListProject
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private readonly MyViewModel _viewModel;
+        private readonly PlayerViewModel _viewModel;
 
         public MainPage()
         {
             this.InitializeComponent();
-            DataContext = _viewModel = new MyViewModel();
+            DataContext = _viewModel = new PlayerViewModel();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)

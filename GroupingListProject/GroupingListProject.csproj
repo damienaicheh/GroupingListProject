@@ -103,7 +103,7 @@
     <Compile Include="Models\PlayerPosition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\PlayerService.cs" />
-    <Compile Include="ViewModels\MyViewModel.cs" />
+    <Compile Include="ViewModels\PlayerViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
