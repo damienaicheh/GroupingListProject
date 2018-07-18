@@ -26,7 +26,7 @@ namespace GroupingListProject.ViewModels
         public void GeneratePanierByStatusGroup(List<Player> players)
         {
             var query = from item in players
-                        group item by item.TypeOfPlayer into g
+                        group item by item.Position into g
                         orderby g.Key
                         select new { GroupName = g.Key, Items = g };
 

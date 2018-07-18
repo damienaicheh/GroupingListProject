@@ -37,7 +37,15 @@
                     
                 </Style>
             </ListView.ItemContainerStyle>
-
+            <ListView.HeaderTemplate>
+                <DataTemplate>
+                    <Grid Background="#0c2569" Height="70">
+                        <TextBlock Text="French Team | World Cup 2018" FontWeight="Bold"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                                   FontSize="20" Foreground="White" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.HeaderTemplate>
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="models:Player">                    
                     <Grid>
@@ -64,7 +72,7 @@
                             <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
                             <Setter Property="FontSize" Value="{ThemeResource ListViewHeaderItemThemeFontSize}" />
                             <Setter Property="Background" Value="{ThemeResource ListViewHeaderItemBackground}" />
-                            <Setter Property="Margin" Value="10,0" />
+                            <Setter Property="Margin" Value="0" />
                             <Setter Property="Padding" Value="12,8,12,0" />
                             <Setter Property="HorizontalContentAlignment" Value="Left" />
                             <Setter Property="VerticalContentAlignment" Value="Top" />
@@ -74,8 +82,7 @@
                                 <Setter.Value>
                                     <ControlTemplate TargetType="ListViewHeaderItem">
                                         <ContentPresenter x:Name="ContentPresenter"
-                                                    Background="#0c2569"
-                                                    Margin="0"
+                                                    Background="#2045aa"
                                                     Content="{TemplateBinding Content}"
                                                     ContentTemplate="{TemplateBinding ContentTemplate}"
                                                     ContentTransitions="{TemplateBinding ContentTransitions}"

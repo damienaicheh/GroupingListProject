@@ -1,10 +1,11 @@
 ﻿namespace GroupingListProject.Models
 {
-    public enum PostPlayer
+    public enum PlayerPosition
     {
         Striker,
         Defender,
         Goalkeeper,
-        Middle
+        Midfielder,
+        Coach
     }
 }
